@@ -1,17 +1,16 @@
 # 📸 Receipt Lens AI
 
-A Chrome extension that extracts data from receipts and converts totals using real-time exchange rates.
+Extract data from receipts and convert totals instantly.
 
-## 💰 Pricing & Limits
-- **Trial:** 5 free scans.
-- **Pro:** $4.99/month for **200 scans**.
-- **Reset:** Scan counts reset automatically on the 1st of every month.
+## 💰 Pricing
+- **Trial:** 5 free scans to test the AI.
+- **Pro:** **$4.99 for 30 days** of **Unlimited Scans**.
 
-## 🛠 Tech Stack
-- **Frontend:** Chrome Extension API, JavaScript.
-- **Backend:** Node.js, Google Cloud Functions, Firebase Firestore.
-- **OCR:** Google Cloud Vision API.
-- **Payments:** Lemon Squeezy.
+## 🚀 Why Pro?
+With the Pro plan, you get 30 days of unrestricted access to our AI OCR and currency conversion engine. Perfect for monthly expense reports and business travels.
+
+## 📄 Privacy
+We process images in real-time. No images are stored on our servers. 
 
 ## 🌐 Website
 Visit our [GitHub Pages site](https://luckyflop.github.io/receiptlens-web/) for more info.
