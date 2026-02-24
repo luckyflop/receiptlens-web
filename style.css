@@ -1,58 +1,36 @@
-:root { --primary: #2ecc71; --dark: #2c3e50; --light: #f8f9fa; }
-body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
-nav { display: flex; justify-content: space-between; padding: 20px 10%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+:root { --primary: #2ecc71; --secondary: #3498db; --dark: #2c3e50; --light: #f4f7f6; --danger: #e74c3c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--dark); background: #fff; scroll-behavior: smooth; }
+
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+.btn-nav { background: var(--primary); color: #fff !important; padding: 8px 20px; border-radius: 5px; text-decoration: none; }
+
 .hero { text-align: center; padding: 100px 10%; background: var(--light); }
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
 .hero span { color: var(--primary); }
-.features { display: flex; justify-content: space-around; padding: 50px 10%; gap: 20px; }
-.feature-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; flex: 1; }
-.pricing { text-align: center; padding: 80px 10%; }
-.price-box { border: 2px solid var(--primary); display: inline-block; padding: 40px; border-radius: 15px; }
+.hero p { font-size: 1.2rem; color: #7f8c8d; max-width: 700px; margin: 0 auto 30px; }
+.btn-primary { background: var(--primary); color: #fff; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-size: 1.1rem; font-weight: bold; transition: 0.3s; }
+.btn-primary:hover { opacity: 0.9; transform: translateY(-3px); }
 
-.btn-primary, .btn-buy { background: var(--primary); color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+.features { display: flex; justify-content: space-around; padding: 80px 10%; gap: 30px; }
+.feature-card { text-align: center; padding: 40px; border-radius: 15px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+.feature-card i { font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px; }
+.feature-card:hover { transform: translateY(-10px); }
 
-.pricing-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
+.pricing { padding: 80px 10%; text-align: center; background: #fff; }
+.pricing-container { display: flex; justify-content: center; margin-top: 50px; }
+.price-box { border: 2px solid var(--primary); padding: 50px; border-radius: 20px; position: relative; max-width: 400px; box-shadow: 0 15px 40px rgba(46, 204, 113, 0.15); }
+.badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; text-transform: uppercase; }
+.price { font-size: 3.5rem; font-weight: bold; margin: 20px 0; }
+.price span { font-size: 1rem; color: #7f8c8d; }
+.price-box ul { list-style: none; text-align: left; margin: 30px 0; }
+.price-box li { margin-bottom: 12px; font-size: 1rem; }
+.price-box li i { color: var(--primary); margin-right: 10px; }
+.btn-buy { display: block; background: var(--dark); color: #fff; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.btn-buy:hover { background: #000; }
+.note { font-size: 0.8rem; color: #bdc3c7; margin-top: 15px; }
 
-.price-box {
-    background: white;
-    border: 2px solid #2ecc71;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    max-width: 350px;
-}
-
-.price-box:hover {
-    transform: translateY(-10px);
-}
-
-.price {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 20px 0;
-}
-
-.price span {
-    font-size: 1rem;
-    color: #7f8c8d;
-    font-weight: normal;
-}
-
-.price-box ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.price-box ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 0.95rem;
-}
+footer { background: var(--dark); color: #fff; padding: 40px 10%; text-align: center; }
+.footer-links { margin-top: 20px; }
+.footer-links a { color: #bdc3c7; margin: 0 15px; text-decoration: none; font-size: 0.9rem; }
