@@ -1,0 +1,11 @@
+:root { --primary: #2ecc71; --dark: #2c3e50; --light: #f8f9fa; }
+body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
+nav { display: flex; justify-content: space-between; padding: 20px 10%; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.hero { text-align: center; padding: 100px 10%; background: var(--light); }
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero span { color: var(--primary); }
+.features { display: flex; justify-content: space-around; padding: 50px 10%; gap: 20px; }
+.feature-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; flex: 1; }
+.pricing { text-align: center; padding: 80px 10%; }
+.price-box { border: 2px solid var(--primary); display: inline-block; padding: 40px; border-radius: 15px; }
+.btn-primary, .btn-buy { background: var(--primary); color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; }
