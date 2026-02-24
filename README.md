@@ -1,16 +1,19 @@
-# 📸 Receipt Lens AI
+# 📸 Receipt Lens AI - Pro Edition
 
-Extract data from receipts and convert totals instantly.
+The professional Chrome Extension for automated receipt data extraction and instant currency conversion.
 
-## 💰 Pricing
-- **Trial:** 5 free scans to test the AI.
-- **Pro:** **$4.99 for 30 days** of **Unlimited Scans**.
+## 💳 Pricing Structure
+- **Free Trial:** 5 scans for evaluation.
+- **Pro Access:** **$4.99 for 30 Days of Unlimited Scanning**.
+- **Model:** One-time purchase for 30 days of service.
 
-## 🚀 Why Pro?
-With the Pro plan, you get 30 days of unrestricted access to our AI OCR and currency conversion engine. Perfect for monthly expense reports and business travels.
+## 🛠 Key Functionality
+- **OCR Engine:** Google Cloud Vision (AI-Powered).
+- **Currency Engine:** Real-time exchange rate API integration.
+- **Data Privacy:** Zero-image storage policy.
+- **Export:** High-fidelity CSV/Excel generation.
 
-## 📄 Privacy
-We process images in real-time. No images are stored on our servers. 
 
 ## 🌐 Website
 Visit our [GitHub Pages site](https://luckyflop.github.io/receiptlens-web/) for more info.
+- **License Provider:** Lemon Squeezy.
