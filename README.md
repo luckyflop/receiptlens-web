@@ -53,6 +53,10 @@
 \- \*\*Payments:\*\* Lemon Squeezy.
 
 
+## 💰 Pricing
+
+- **Free Trial:** 5 scans for testing (No credit card required).
+- **Pro Monthly:** **$4.99/month** for unlimited scans and full FX features.
 
 \## 📄 Privacy \& Security
 
