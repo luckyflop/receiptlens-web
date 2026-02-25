@@ -6,14 +6,18 @@
     <title>Receipt Lens AI - Smart Expense Management</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
-        header { background: #2c3e50; color: white; padding: 2rem text-align: center; }
+        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
         .container { width: 80%; margin: auto; overflow: hidden; padding: 2rem 0; }
         .hero { text-align: center; padding: 3rem 0; background: #f4f4f4; }
-        .btn { display: inline-block; background: #e67e22; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; }
-        .features { display: flex; justify-content: space-around; margin: 2rem 0; }
-        .feature-box { flex: 1; padding: 1rem; text-align: center; border: 1px solid #ddd; margin: 0 10px; border-radius: 8px; }
+        .btn { display: inline-block; background: #e67e22; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; margin-top: 1rem; transition: 0.3s; }
+        .btn:hover { background: #d35400; }
+        .btn-contact { background: #3498db; }
+        .btn-contact:hover { background: #2980b9; }
+        .features { display: flex; justify-content: space-around; margin: 2rem 0; flex-wrap: wrap; }
+        .feature-box { flex: 1; padding: 1rem; text-align: center; border: 1px solid #ddd; margin: 10px; border-radius: 8px; min-width: 250px; }
         footer { background: #333; color: white; text-align: center; padding: 1.5rem 0; margin-top: 2rem; }
         footer a { color: #e67e22; text-decoration: none; margin: 0 10px; }
+        .social-links { margin-top: 1rem; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -26,7 +30,10 @@
         <div class="container">
             <h2>Stop Manual Data Entry</h2>
             <p>Extract data from receipts with 100% precision using AI and export directly to Excel or CSV.</p>
+            <img src="screenshot.png" alt="Receipt Lens AI Demo" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 20px 0;">
+            <br>
             <a href="https://chromewebstore.google.com/detail/hhflggooefmfddnckdploepficheflej" class="btn">Get it on Chrome Store</a>
+            <a href="mailto:luckyflopbtt@gmail.com" class="btn btn-contact">Contact Us</a>
         </div>
     </section>
 
@@ -49,7 +56,7 @@
         <section id="pricing" style="text-align:center; padding: 2rem 0;">
             <h2>Simple Pricing</h2>
             <p>Choose the plan that fits your needs. All payments are securely processed via Lemon Squeezy.</p>
-            <div style="display:flex; justify-content: center; gap: 20px;">
+            <div style="display:flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                 <div class="feature-box">
                     <h4>Free Plan</h4>
                     <p>5 Scans / month</p>
@@ -65,9 +72,13 @@
 
     <footer>
         <p>&copy; 2026 Receipt Lens AI. All rights reserved.</p>
+        <div class="social-links">
+            Follow us on X: <a href="https://x.com/ReceiptlensAI" target="_blank">@ReceiptlensAI</a>
+        </div>
         <p>
             <a href="privacy.html">Privacy Policy</a> | 
-            <a href="https://github.com/luckyflop/receiptlens-web">Support (GitHub)</a>
+            <a href="mailto:luckyflopbtt@gmail.com">Support</a> |
+            <a href="https://github.com/luckyflop/receiptlens-web">GitHub</a>
         </p>
     </footer>
 </body>
