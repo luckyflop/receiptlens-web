@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Receipt Lens</title>
-<meta name="description" content="Privacy Policy for the Receipt Lens Chrome extension and Android app.">
+<title data-t="meta.title">Privacy Policy — Receipt Lens</title>
+<meta name="description" data-t="meta.desc" content="Privacy Policy for the Receipt Lens Chrome extension and Android app.">
 <link rel="icon" href="app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,106 +16,203 @@
 <nav class="nav">
   <div class="container inner">
     <a class="brand" href="index.html"><img src="app-icon.png" alt="Receipt Lens logo">Receipt Lens</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="terms.html">Terms</a>
-      <a href="mailto:luckyflopbtt@gmail.com">Support</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" data-t="nav.home">Home</a>
+        <a href="terms.html" data-t="nav.terms">Terms</a>
+        <a href="mailto:luckyflopbtt@gmail.com" data-t="nav.support">Support</a>
+      </div>
+      <button class="langtoggle" id="langBtn" type="button" aria-label="Switch language">العربية</button>
     </div>
   </div>
 </nav>
 
 <section class="block">
   <div class="container doc">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Receipt Lens · Last updated: June 24, 2026</p>
+    <h1 data-t="h1">Privacy Policy</h1>
+    <p class="updated" data-t="updated">Receipt Lens · Last updated: June 24, 2026</p>
 
-    <p>This Privacy Policy explains how <strong>Receipt Lens</strong> (“we”, “us”, “our”) collects, uses, and protects your information when you use our products: the <strong>Receipt Lens AI</strong> Chrome browser extension and the <strong>Receipt Lens</strong> Android application, together with their shared backend services (collectively, the “Service”). By using the Service, you agree to the practices described below.</p>
+    <p data-t="intro">This Privacy Policy explains how <strong>Receipt Lens</strong> (“we”, “us”, “our”) collects, uses, and protects your information when you use our products: the <strong>Receipt Lens AI</strong> Chrome browser extension and the <strong>Receipt Lens</strong> Android application, together with their shared backend services (collectively, the “Service”). By using the Service, you agree to the practices described below.</p>
 
-    <h2>1. Information We Collect</h2>
+    <h2 data-t="h.collect">1. Information We Collect</h2>
 
-    <h3>Account information</h3>
-    <p>When you sign in with Google, we receive your <strong>email address</strong> and basic profile information (such as your name). We use Google OAuth and request only the basic email and profile scopes.</p>
+    <h3 data-t="h.account">Account information</h3>
+    <p data-t="p.account">When you sign in with Google, we receive your <strong>email address</strong> and basic profile information (such as your name). We use Google OAuth and request only the basic email and profile scopes.</p>
 
-    <h3>Receipt data</h3>
-    <p>When you scan a receipt, the image you choose (a photo, a gallery image, or an uploaded file) is sent to our servers, where AI extracts details such as the merchant name, date, and total amount. This extracted information may include <strong>financial details</strong> contained in your receipts, together with the currency conversion you request.</p>
+    <h3 data-t="h.receipt">Receipt data</h3>
+    <p data-t="p.receipt">When you scan a receipt, the image you choose (a photo, a gallery image, or an uploaded file) is sent to our servers, where AI extracts details such as the merchant name, date, and total amount. This extracted information may include <strong>financial details</strong> contained in your receipts, together with the currency conversion you request.</p>
 
-    <h3>Camera &amp; photos (Android app)</h3>
-    <p>The Android app requests <strong>camera</strong> access (to photograph a receipt) and <strong>photo/media</strong> access (to choose a saved receipt image). These are used only when you actively scan a receipt. The app does not browse, upload, or scan your photo library in the background.</p>
+    <h3 data-t="h.camera">Camera &amp; photos (Android app)</h3>
+    <p data-t="p.camera">The Android app requests <strong>camera</strong> access (to photograph a receipt) and <strong>photo/media</strong> access (to choose a saved receipt image). These are used only when you actively scan a receipt. The app does not browse, upload, or scan your photo library in the background.</p>
 
-    <h3>Data stored on your device</h3>
-    <p>Your preferences (for example, light/dark theme and selected currency), your sign-in session, your scanned receipt history, and — in the Android app — your Zakat tracker settings are stored <strong>locally on your device</strong> (in browser storage for the extension, and in on-device app storage for the Android app). This data stays on your device unless you export it.</p>
+    <h3 data-t="h.device">Data stored on your device</h3>
+    <p data-t="p.device">Your preferences (for example, light/dark theme and selected currency), your sign-in session, your scanned receipt history, and — in the Android app — your Zakat tracker settings are stored <strong>locally on your device</strong> (in browser storage for the extension, and in on-device app storage for the Android app). This data stays on your device unless you export it.</p>
 
-    <p>We do <strong>not</strong> collect your browsing history, and the extension does not read the content of the web pages you visit.</p>
+    <p data-t="p.nobrowsing">We do <strong>not</strong> collect your browsing history, and the extension does not read the content of the web pages you visit.</p>
 
-    <h2>2. How We Use Your Information</h2>
+    <h2 data-t="h.use">2. How We Use Your Information</h2>
     <ul>
-      <li>To authenticate you and keep you signed in.</li>
-      <li>To apply free-plan scan limits and to unlock Pro features for subscribers.</li>
-      <li>To process your receipt images and return the extracted, converted data you request.</li>
-      <li>To operate, maintain, secure, and improve the Service.</li>
+      <li data-t="use.1">To authenticate you and keep you signed in.</li>
+      <li data-t="use.2">To apply free-plan scan limits and to unlock Pro features for subscribers.</li>
+      <li data-t="use.3">To process your receipt images and return the extracted, converted data you request.</li>
+      <li data-t="use.4">To operate, maintain, secure, and improve the Service.</li>
     </ul>
-    <p>We do not use your data for advertising, and we do not sell it.</p>
+    <p data-t="p.noads">We do not use your data for advertising, and we do not sell it.</p>
 
-    <h2>3. Third-Party Services</h2>
-    <p>We rely on a small number of trusted providers, each of which processes data under its own privacy policy:</p>
+    <h2 data-t="h.third">3. Third-Party Services</h2>
+    <p data-t="p.third">We rely on a small number of trusted providers, each of which processes data under its own privacy policy:</p>
     <ul>
-      <li><strong>Google Sign-In</strong> — used to authenticate you (both products).</li>
-      <li><strong>OpenAI</strong> — receipt images are sent to OpenAI’s API (GPT-4o) solely to extract the data you request.</li>
-      <li><strong>Google Cloud</strong> — hosts the backend that processes your requests and stores your plan/usage status.</li>
-      <li><strong>Polar</strong> — processes Pro subscription payments for the <strong>Chrome extension</strong>.</li>
-      <li><strong>Google Play Billing &amp; RevenueCat</strong> — process and manage Pro subscriptions for the <strong>Android app</strong>. To manage your entitlement, RevenueCat receives an app user identifier (your email) and your purchase status.</li>
-      <li><strong>Public rate APIs</strong> — currency exchange rates, and live gold/silver prices for the Zakat nisab, are fetched from public APIs. These requests contain only currency/metal codes and <strong>no personal data</strong>.</li>
+      <li data-t="third.google"><strong>Google Sign-In</strong> — used to authenticate you (both products).</li>
+      <li data-t="third.openai"><strong>OpenAI</strong> — receipt images are sent to OpenAI’s API (GPT-4o) solely to extract the data you request.</li>
+      <li data-t="third.gcloud"><strong>Google Cloud</strong> — hosts the backend that processes your requests and stores your plan/usage status.</li>
+      <li data-t="third.polar"><strong>Polar</strong> — processes Pro subscription payments for the <strong>Chrome extension</strong>.</li>
+      <li data-t="third.play"><strong>Google Play Billing &amp; RevenueCat</strong> — process and manage Pro subscriptions for the <strong>Android app</strong>. To manage your entitlement, RevenueCat receives an app user identifier (your email) and your purchase status.</li>
+      <li data-t="third.rates"><strong>Public rate APIs</strong> — currency exchange rates, and live gold/silver prices for the Zakat nisab, are fetched from public APIs. These requests contain only currency/metal codes and <strong>no personal data</strong>.</li>
     </ul>
-    <p>In all cases, we do not receive or store your full payment-card details; payments are handled by the payment provider.</p>
+    <p data-t="p.nopayment">In all cases, we do not receive or store your full payment-card details; payments are handled by the payment provider.</p>
 
-    <p>Receipt Lens’ use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. We use Google user data only to provide and improve the Service’s core features, and we do not transfer or sell this data except as needed to provide the Service, to comply with applicable law, or in connection with a merger or acquisition.</p>
+    <p data-t="p.googleapi">Receipt Lens’ use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. We use Google user data only to provide and improve the Service’s core features, and we do not transfer or sell this data except as needed to provide the Service, to comply with applicable law, or in connection with a merger or acquisition.</p>
 
-    <h2>4. Data Storage &amp; Retention</h2>
+    <h2 data-t="h.storage">4. Data Storage &amp; Retention</h2>
     <ul>
-      <li><strong>On-device data</strong> (preferences, session, scan history, Zakat settings) remains on your device until you sign out, clear it in-app, or uninstall.</li>
-      <li><strong>Account information</strong> (your email and your usage/subscription status) is retained on our servers while your account is active.</li>
-      <li><strong>Receipt images</strong> sent for processing are used only to extract the requested data and are not stored on our servers after the result is returned.</li>
-    </ul>
-
-    <h2>5. Data Sharing</h2>
-    <p>We do <strong>not</strong> sell your personal data. We do not share it with third parties except the service providers listed above (acting on our behalf) or when required by law.</p>
-
-    <h2>6. Your Choices &amp; Rights</h2>
-    <ul>
-      <li><strong>Access or deletion:</strong> You can request access to, or deletion of, your account data by emailing us (see below). The Android app also provides an in-app option to delete your account and associated server data.</li>
-      <li><strong>On-device data:</strong> Sign out to clear your session, and clear your scanned history from within the extension or app at any time.</li>
-      <li><strong>Revoke Google access:</strong> You can remove the Service’s access to your Google account at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
-      <li><strong>Manage subscriptions:</strong> Manage or cancel the Android subscription in Google Play; manage the extension subscription through Polar.</li>
+      <li data-t="storage.device"><strong>On-device data</strong> (preferences, session, scan history, Zakat settings) remains on your device until you sign out, clear it in-app, or uninstall.</li>
+      <li data-t="storage.account"><strong>Account information</strong> (your email and your usage/subscription status) is retained on our servers while your account is active.</li>
+      <li data-t="storage.images"><strong>Receipt images</strong> sent for processing are used only to extract the requested data and are not stored on our servers after the result is returned.</li>
     </ul>
 
-    <h2>7. Data Security</h2>
-    <p>We use reasonable technical measures to protect your data, including encrypted transmission (HTTPS). However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    <h2 data-t="h.sharing">5. Data Sharing</h2>
+    <p data-t="p.sharing">We do <strong>not</strong> sell your personal data. We do not share it with third parties except the service providers listed above (acting on our behalf) or when required by law.</p>
 
-    <h2>8. Children’s Privacy</h2>
-    <p>The Service is not directed to children under the age of 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal information from children.</p>
+    <h2 data-t="h.rights">6. Your Choices &amp; Rights</h2>
+    <ul>
+      <li data-t="rights.access"><strong>Access or deletion:</strong> You can request access to, or deletion of, your account data by emailing us (see below). The Android app also provides an in-app option to delete your account and associated server data.</li>
+      <li data-t="rights.device"><strong>On-device data:</strong> Sign out to clear your session, and clear your scanned history from within the extension or app at any time.</li>
+      <li data-t="rights.revoke"><strong>Revoke Google access:</strong> You can remove the Service’s access to your Google account at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+      <li data-t="rights.manage"><strong>Manage subscriptions:</strong> Manage or cancel the Android subscription in Google Play; manage the extension subscription through Polar.</li>
+    </ul>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised “Last updated” date.</p>
+    <h2 data-t="h.security">7. Data Security</h2>
+    <p data-t="p.security">We use reasonable technical measures to protect your data, including encrypted transmission (HTTPS). However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy or your data, contact us at <a href="mailto:luckyflopbtt@gmail.com">luckyflopbtt@gmail.com</a>.</p>
+    <h2 data-t="h.children">8. Children’s Privacy</h2>
+    <p data-t="p.children">The Service is not directed to children under the age of 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal information from children.</p>
 
-    <p class="note">Receipt Lens is a single-purpose expense tool. We collect only what is needed to scan your receipts, manage your plan, and let you export your expenses — nothing more.</p>
+    <h2 data-t="h.changes">9. Changes to This Policy</h2>
+    <p data-t="p.changes">We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised “Last updated” date.</p>
+
+    <h2 data-t="h.contact">10. Contact Us</h2>
+    <p data-t="p.contact">If you have any questions about this Privacy Policy or your data, contact us at <a href="mailto:luckyflopbtt@gmail.com">luckyflopbtt@gmail.com</a>.</p>
+
+    <p class="note" data-t="note">Receipt Lens is a single-purpose expense tool. We collect only what is needed to scan your receipts, manage your plan, and let you export your expenses — nothing more.</p>
   </div>
 </section>
 
 <footer>
   <div class="container">
     <p style="margin:0 0 6px">
-      <a href="index.html">Home</a> ·
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Use</a> ·
-      <a href="mailto:luckyflopbtt@gmail.com">Contact</a> ·
+      <a href="index.html" data-t="foot.home">Home</a> ·
+      <a href="privacy.html" data-t="foot.privacy">Privacy Policy</a> ·
+      <a href="terms.html" data-t="foot.terms">Terms of Use</a> ·
+      <a href="mailto:luckyflopbtt@gmail.com" data-t="foot.contact">Contact</a> ·
       <a href="https://github.com/luckyflop/receiptlens-web" target="_blank" rel="noopener">GitHub</a>
     </p>
-    <p class="small">© 2026 Receipt Lens · LuckyFlop. All rights reserved.</p>
+    <p class="small" data-t="foot.rights">© 2026 Receipt Lens · LuckyFlop. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  var TR = {
+    "meta.title": {en:"Privacy Policy — Receipt Lens", ar:"سياسة الخصوصية — Receipt Lens"},
+    "meta.desc": {en:"Privacy Policy for the Receipt Lens Chrome extension and Android app.", ar:"سياسة الخصوصية لإضافة كروم وتطبيق أندرويد من Receipt Lens."},
+    "nav.home": {en:"Home", ar:"الرئيسية"},
+    "nav.terms": {en:"Terms", ar:"الشروط"},
+    "nav.support": {en:"Support", ar:"الدعم"},
+    "h1": {en:"Privacy Policy", ar:"سياسة الخصوصية"},
+    "updated": {en:"Receipt Lens · Last updated: June 24, 2026", ar:"Receipt Lens · آخر تحديث: ٢٤ يونيو ٢٠٢٦"},
+    "intro": {en:"This Privacy Policy explains how <strong>Receipt Lens</strong> (“we”, “us”, “our”) collects, uses, and protects your information when you use our products: the <strong>Receipt Lens AI</strong> Chrome browser extension and the <strong>Receipt Lens</strong> Android application, together with their shared backend services (collectively, the “Service”). By using the Service, you agree to the practices described below.",
+              ar:"توضّح سياسة الخصوصية هذه كيف يجمع <strong>Receipt Lens</strong> («نحن»، «لنا») معلوماتك ويستخدمها ويحميها عند استخدامك لمنتجاتنا: إضافة متصفح كروم <strong>Receipt Lens AI</strong> وتطبيق أندرويد <strong>Receipt Lens</strong>، مع خدمات الخادم المشتركة بينهما (يُشار إليها مجتمعةً بـ«الخدمة»). وباستخدامك للخدمة، فإنك توافق على الممارسات الموضّحة أدناه."},
+    "h.collect": {en:"1. Information We Collect", ar:"١. المعلومات التي نجمعها"},
+    "h.account": {en:"Account information", ar:"معلومات الحساب"},
+    "p.account": {en:"When you sign in with Google, we receive your <strong>email address</strong> and basic profile information (such as your name). We use Google OAuth and request only the basic email and profile scopes.",
+                  ar:"عند تسجيل الدخول عبر Google، نتلقّى <strong>عنوان بريدك الإلكتروني</strong> ومعلومات ملفك الأساسية (مثل اسمك). ونستخدم Google OAuth ونطلب فقط نطاقَي البريد والملف الأساسيين."},
+    "h.receipt": {en:"Receipt data", ar:"بيانات الفواتير"},
+    "p.receipt": {en:"When you scan a receipt, the image you choose (a photo, a gallery image, or an uploaded file) is sent to our servers, where AI extracts details such as the merchant name, date, and total amount. This extracted information may include <strong>financial details</strong> contained in your receipts, together with the currency conversion you request.",
+                  ar:"عند مسح فاتورة، تُرسَل الصورة التي تختارها (صورة فوتوغرافية، أو صورة من المعرض، أو ملف مرفوع) إلى خوادمنا، حيث يستخرج الذكاء الاصطناعي تفاصيل مثل اسم المتجر والتاريخ والمبلغ الإجمالي. وقد تتضمّن هذه المعلومات المستخرجة <strong>تفاصيل مالية</strong> واردة في فواتيرك، إلى جانب تحويل العملة الذي تطلبه."},
+    "h.camera": {en:"Camera & photos (Android app)", ar:"الكاميرا والصور (تطبيق أندرويد)"},
+    "p.camera": {en:"The Android app requests <strong>camera</strong> access (to photograph a receipt) and <strong>photo/media</strong> access (to choose a saved receipt image). These are used only when you actively scan a receipt. The app does not browse, upload, or scan your photo library in the background.",
+                 ar:"يطلب تطبيق أندرويد إذن <strong>الكاميرا</strong> (لتصوير الفاتورة) وإذن <strong>الصور/الوسائط</strong> (لاختيار صورة فاتورة محفوظة). ولا يُستخدمان إلا عند قيامك فعليًا بمسح فاتورة. ولا يتصفّح التطبيق مكتبة صورك أو يرفعها أو يمسحها في الخلفية."},
+    "h.device": {en:"Data stored on your device", ar:"البيانات المخزّنة على جهازك"},
+    "p.device": {en:"Your preferences (for example, light/dark theme and selected currency), your sign-in session, your scanned receipt history, and — in the Android app — your Zakat tracker settings are stored <strong>locally on your device</strong> (in browser storage for the extension, and in on-device app storage for the Android app). This data stays on your device unless you export it.",
+                 ar:"تُخزَّن تفضيلاتك (مثل السمة الفاتحة/الداكنة والعملة المختارة) وجلسة تسجيل دخولك وسجلّ فواتيرك الممسوحة — وفي تطبيق أندرويد إعدادات متتبّع الزكاة — <strong>محليًا على جهازك</strong> (في تخزين المتصفح للإضافة، وفي تخزين التطبيق على الجهاز لتطبيق أندرويد). وتبقى هذه البيانات على جهازك ما لم تقم بتصديرها."},
+    "p.nobrowsing": {en:"We do <strong>not</strong> collect your browsing history, and the extension does not read the content of the web pages you visit.",
+                     ar:"نحن <strong>لا</strong> نجمع سجلّ تصفّحك، ولا تقرأ الإضافة محتوى صفحات الويب التي تزورها."},
+    "h.use": {en:"2. How We Use Your Information", ar:"٢. كيف نستخدم معلوماتك"},
+    "use.1": {en:"To authenticate you and keep you signed in.", ar:"للتحقّق من هويتك وإبقائك مسجّل الدخول."},
+    "use.2": {en:"To apply free-plan scan limits and to unlock Pro features for subscribers.", ar:"لتطبيق حدود المسح في الخطة المجانية وفتح مزايا Pro للمشتركين."},
+    "use.3": {en:"To process your receipt images and return the extracted, converted data you request.", ar:"لمعالجة صور فواتيرك وإعادة البيانات المستخرجة والمحوّلة التي تطلبها."},
+    "use.4": {en:"To operate, maintain, secure, and improve the Service.", ar:"لتشغيل الخدمة وصيانتها وتأمينها وتحسينها."},
+    "p.noads": {en:"We do not use your data for advertising, and we do not sell it.", ar:"لا نستخدم بياناتك للإعلانات، ولا نبيعها."},
+    "h.third": {en:"3. Third-Party Services", ar:"٣. خدمات الأطراف الثالثة"},
+    "p.third": {en:"We rely on a small number of trusted providers, each of which processes data under its own privacy policy:", ar:"نعتمد على عدد قليل من مزوّدي الخدمة الموثوقين، يعالج كلٌّ منهم البيانات وفق سياسة الخصوصية الخاصة به:"},
+    "third.google": {en:"<strong>Google Sign-In</strong> — used to authenticate you (both products).", ar:"<strong>تسجيل الدخول عبر Google</strong> — للتحقّق من هويتك (في المنتجَين)."},
+    "third.openai": {en:"<strong>OpenAI</strong> — receipt images are sent to OpenAI’s API (GPT-4o) solely to extract the data you request.", ar:"<strong>OpenAI</strong> — تُرسَل صور الفواتير إلى واجهة OpenAI البرمجية (GPT-4o) لاستخراج البيانات التي تطلبها فقط."},
+    "third.gcloud": {en:"<strong>Google Cloud</strong> — hosts the backend that processes your requests and stores your plan/usage status.", ar:"<strong>Google Cloud</strong> — يستضيف الخادم الذي يعالج طلباتك ويخزّن حالة خطتك/استخدامك."},
+    "third.polar": {en:"<strong>Polar</strong> — processes Pro subscription payments for the <strong>Chrome extension</strong>.", ar:"<strong>Polar</strong> — يعالج مدفوعات اشتراك Pro لإضافة كروم."},
+    "third.play": {en:"<strong>Google Play Billing &amp; RevenueCat</strong> — process and manage Pro subscriptions for the <strong>Android app</strong>. To manage your entitlement, RevenueCat receives an app user identifier (your email) and your purchase status.",
+                   ar:"<strong>فوترة Google Play وRevenueCat</strong> — تعالجان وتديران اشتراكات Pro لتطبيق أندرويد. ولإدارة اشتراكك، يتلقّى RevenueCat معرّفًا للمستخدم (بريدك الإلكتروني) وحالة شرائك."},
+    "third.rates": {en:"<strong>Public rate APIs</strong> — currency exchange rates, and live gold/silver prices for the Zakat nisab, are fetched from public APIs. These requests contain only currency/metal codes and <strong>no personal data</strong>.",
+                    ar:"<strong>واجهات الأسعار العامة</strong> — تُجلَب أسعار صرف العملات وأسعار الذهب/الفضة اللحظية لنصاب الزكاة من واجهات برمجية عامة. ولا تحتوي هذه الطلبات إلا على رموز العملات/المعادن و<strong>لا أي بيانات شخصية</strong>."},
+    "p.nopayment": {en:"In all cases, we do not receive or store your full payment-card details; payments are handled by the payment provider.", ar:"في جميع الأحوال، لا نتلقّى أو نخزّن تفاصيل بطاقة الدفع كاملةً؛ إذ يتولّى مزوّد الدفع معالجة المدفوعات."},
+    "p.googleapi": {en:"Receipt Lens’ use of information received from Google APIs adheres to the <a href=\"https://developers.google.com/terms/api-services-user-data-policy\" target=\"_blank\" rel=\"noopener\">Google API Services User Data Policy</a>, including the Limited Use requirements. We use Google user data only to provide and improve the Service’s core features, and we do not transfer or sell this data except as needed to provide the Service, to comply with applicable law, or in connection with a merger or acquisition.",
+                    ar:"يلتزم استخدام Receipt Lens للمعلومات المتلقّاة من واجهات Google البرمجية بـ<a href=\"https://developers.google.com/terms/api-services-user-data-policy\" target=\"_blank\" rel=\"noopener\">سياسة بيانات مستخدمي خدمات Google API</a>، بما في ذلك متطلّبات الاستخدام المحدود. ولا نستخدم بيانات مستخدم Google إلا لتقديم مزايا الخدمة الأساسية وتحسينها، ولا ننقل هذه البيانات أو نبيعها إلا عند الضرورة لتقديم الخدمة، أو للامتثال للقانون المعمول به، أو في إطار اندماج أو استحواذ."},
+    "h.storage": {en:"4. Data Storage & Retention", ar:"٤. تخزين البيانات والاحتفاظ بها"},
+    "storage.device": {en:"<strong>On-device data</strong> (preferences, session, scan history, Zakat settings) remains on your device until you sign out, clear it in-app, or uninstall.", ar:"<strong>بيانات الجهاز</strong> (التفضيلات، الجلسة، سجلّ المسح، إعدادات الزكاة) تبقى على جهازك حتى تسجّل الخروج أو تمسحها داخل التطبيق أو تلغي التثبيت."},
+    "storage.account": {en:"<strong>Account information</strong> (your email and your usage/subscription status) is retained on our servers while your account is active.", ar:"<strong>معلومات الحساب</strong> (بريدك وحالة استخدامك/اشتراكك) تُحفَظ على خوادمنا ما دام حسابك نشطًا."},
+    "storage.images": {en:"<strong>Receipt images</strong> sent for processing are used only to extract the requested data and are not stored on our servers after the result is returned.", ar:"<strong>صور الفواتير</strong> المُرسَلة للمعالجة تُستخدم فقط لاستخراج البيانات المطلوبة ولا تُخزَّن على خوادمنا بعد إعادة النتيجة."},
+    "h.sharing": {en:"5. Data Sharing", ar:"٥. مشاركة البيانات"},
+    "p.sharing": {en:"We do <strong>not</strong> sell your personal data. We do not share it with third parties except the service providers listed above (acting on our behalf) or when required by law.", ar:"نحن <strong>لا</strong> نبيع بياناتك الشخصية. ولا نشاركها مع أطراف ثالثة باستثناء مزوّدي الخدمة المذكورين أعلاه (الذين يعملون نيابةً عنّا) أو عند الاقتضاء بموجب القانون."},
+    "h.rights": {en:"6. Your Choices & Rights", ar:"٦. خياراتك وحقوقك"},
+    "rights.access": {en:"<strong>Access or deletion:</strong> You can request access to, or deletion of, your account data by emailing us (see below). The Android app also provides an in-app option to delete your account and associated server data.", ar:"<strong>الوصول أو الحذف:</strong> يمكنك طلب الوصول إلى بيانات حسابك أو حذفها بمراسلتنا (انظر أدناه). كما يوفّر تطبيق أندرويد خيارًا داخل التطبيق لحذف حسابك والبيانات المرتبطة به على الخادم."},
+    "rights.device": {en:"<strong>On-device data:</strong> Sign out to clear your session, and clear your scanned history from within the extension or app at any time.", ar:"<strong>بيانات الجهاز:</strong> سجّل الخروج لمسح جلستك، وامسح سجلّ فواتيرك من داخل الإضافة أو التطبيق في أي وقت."},
+    "rights.revoke": {en:"<strong>Revoke Google access:</strong> You can remove the Service’s access to your Google account at <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">myaccount.google.com/permissions</a>.", ar:"<strong>إلغاء وصول Google:</strong> يمكنك إزالة وصول الخدمة إلى حساب Google من <a href=\"https://myaccount.google.com/permissions\" target=\"_blank\" rel=\"noopener\">myaccount.google.com/permissions</a>."},
+    "rights.manage": {en:"<strong>Manage subscriptions:</strong> Manage or cancel the Android subscription in Google Play; manage the extension subscription through Polar.", ar:"<strong>إدارة الاشتراكات:</strong> أدِر اشتراك أندرويد أو ألغِه في Google Play؛ وأدِر اشتراك الإضافة عبر Polar."},
+    "h.security": {en:"7. Data Security", ar:"٧. أمن البيانات"},
+    "p.security": {en:"We use reasonable technical measures to protect your data, including encrypted transmission (HTTPS). However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.", ar:"نستخدم تدابير تقنية معقولة لحماية بياناتك، بما في ذلك النقل المشفّر (HTTPS). ومع ذلك، لا توجد وسيلة نقل أو تخزين آمنة تمامًا، ولا يمكننا ضمان أمان مطلق."},
+    "h.children": {en:"8. Children’s Privacy", ar:"٨. خصوصية الأطفال"},
+    "p.children": {en:"The Service is not directed to children under the age of 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal information from children.", ar:"الخدمة ليست موجّهة للأطفال دون سن ١٣ عامًا (أو الحد الأدنى للسن المطلوب في بلدك)، ولا نجمع عن قصد معلومات شخصية من الأطفال."},
+    "h.changes": {en:"9. Changes to This Policy", ar:"٩. تغييرات هذه السياسة"},
+    "p.changes": {en:"We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised “Last updated” date.", ar:"قد نحدّث سياسة الخصوصية هذه من حين لآخر. وستُنشَر أي تغييرات على هذه الصفحة مع تحديث تاريخ «آخر تحديث»."},
+    "h.contact": {en:"10. Contact Us", ar:"١٠. اتصل بنا"},
+    "p.contact": {en:"If you have any questions about this Privacy Policy or your data, contact us at <a href=\"mailto:luckyflopbtt@gmail.com\">luckyflopbtt@gmail.com</a>.", ar:"إذا كان لديك أي سؤال حول سياسة الخصوصية هذه أو بياناتك، تواصل معنا على <a href=\"mailto:luckyflopbtt@gmail.com\">luckyflopbtt@gmail.com</a>."},
+    "note": {en:"Receipt Lens is a single-purpose expense tool. We collect only what is needed to scan your receipts, manage your plan, and let you export your expenses — nothing more.", ar:"Receipt Lens أداة مصاريف ذات غرض واحد. نجمع فقط ما يلزم لمسح فواتيرك وإدارة خطتك والسماح لك بتصدير مصاريفك — لا أكثر."},
+    "foot.home": {en:"Home", ar:"الرئيسية"},
+    "foot.privacy": {en:"Privacy Policy", ar:"سياسة الخصوصية"},
+    "foot.terms": {en:"Terms of Use", ar:"شروط الاستخدام"},
+    "foot.contact": {en:"Contact", ar:"تواصل"},
+    "foot.rights": {en:"© 2026 Receipt Lens · LuckyFlop. All rights reserved.", ar:"© 2026 Receipt Lens · LuckyFlop. جميع الحقوق محفوظة."}
+  };
+  function applyLang(lang){
+    var html=document.documentElement; html.lang=lang; html.dir=(lang==="ar")?"rtl":"ltr";
+    document.querySelectorAll("[data-t]").forEach(function(el){
+      var k=el.getAttribute("data-t");
+      if(TR[k]&&TR[k][lang]!=null){
+        if(el.tagName==="TITLE") el.textContent=TR[k][lang];
+        else if(el.tagName==="META") el.setAttribute("content",TR[k][lang]);
+        else el.innerHTML=TR[k][lang];
+      }
+    });
+    var b=document.getElementById("langBtn"); b.textContent=(lang==="ar")?"English":"العربية";
+    try{localStorage.setItem("rl_lang",lang);}catch(e){}
+  }
+  (function(){
+    var s=null; try{s=localStorage.getItem("rl_lang");}catch(e){}
+    var lang=s||((navigator.language||"en").toLowerCase().indexOf("ar")===0?"ar":"en");
+    applyLang(lang);
+    document.getElementById("langBtn").addEventListener("click",function(){
+      applyLang(document.documentElement.lang==="ar"?"en":"ar");
+    });
+  })();
+</script>
 
 </body>
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Use — Receipt Lens</title>
-<meta name="description" content="Terms of Use for the Receipt Lens Chrome extension and Android app.">
+<title data-t="meta.title">Terms of Use — Receipt Lens</title>
+<meta name="description" data-t="meta.desc" content="Terms of Use for the Receipt Lens Chrome extension and Android app.">
 <link rel="icon" href="app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,73 +16,150 @@
 <nav class="nav">
   <div class="container inner">
     <a class="brand" href="index.html"><img src="app-icon.png" alt="Receipt Lens logo">Receipt Lens</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="mailto:luckyflopbtt@gmail.com">Support</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" data-t="nav.home">Home</a>
+        <a href="privacy.html" data-t="nav.privacy">Privacy</a>
+        <a href="mailto:luckyflopbtt@gmail.com" data-t="nav.support">Support</a>
+      </div>
+      <button class="langtoggle" id="langBtn" type="button" aria-label="Switch language">العربية</button>
     </div>
   </div>
 </nav>
 
 <section class="block">
   <div class="container doc">
-    <h1>Terms of Use</h1>
-    <p class="updated">Receipt Lens · Last updated: June 24, 2026</p>
+    <h1 data-t="h1">Terms of Use</h1>
+    <p class="updated" data-t="updated">Receipt Lens · Last updated: June 24, 2026</p>
 
-    <p>These Terms of Use (“Terms”) govern your use of the <strong>Receipt Lens AI</strong> Chrome extension, the <strong>Receipt Lens</strong> Android application, and related services (the “Service”), provided by LuckyFlop (“we”, “us”). By installing or using the Service, you agree to these Terms. If you do not agree, please do not use the Service.</p>
+    <p data-t="intro">These Terms of Use (“Terms”) govern your use of the <strong>Receipt Lens AI</strong> Chrome extension, the <strong>Receipt Lens</strong> Android application, and related services (the “Service”), provided by LuckyFlop (“we”, “us”). By installing or using the Service, you agree to these Terms. If you do not agree, please do not use the Service.</p>
 
-    <h2>1. The Service</h2>
-    <p>Receipt Lens lets you scan receipts using AI to extract details such as the merchant, date and total, convert currencies, categorize expenses, export your data, and (in the Android app) estimate Zakat. Features may differ between the extension and the app, and may change over time.</p>
+    <h2 data-t="h.1">1. The Service</h2>
+    <p data-t="p.1">Receipt Lens lets you scan receipts using AI to extract details such as the merchant, date and total, convert currencies, categorize expenses, export your data, and (in the Android app) estimate Zakat. Features may differ between the extension and the app, and may change over time.</p>
 
-    <h2>2. Eligibility &amp; Accounts</h2>
-    <p>You must be old enough to form a binding contract in your jurisdiction. You are responsible for activity under your account and for keeping your sign-in secure. You sign in with Google; you agree to provide accurate information.</p>
+    <h2 data-t="h.2">2. Eligibility &amp; Accounts</h2>
+    <p data-t="p.2">You must be old enough to form a binding contract in your jurisdiction. You are responsible for activity under your account and for keeping your sign-in secure. You sign in with Google; you agree to provide accurate information.</p>
 
-    <h2>3. Free Plan &amp; Subscriptions</h2>
+    <h2 data-t="h.3">3. Free Plan &amp; Subscriptions</h2>
     <ul>
-      <li>The free plan includes a limited number of scans (currently 5).</li>
-      <li>Pro unlocks unlimited scanning. The Chrome extension’s Pro is billed via <strong>Polar</strong>; the Android app’s Pro is billed via <strong>Google Play</strong>.</li>
-      <li>Subscriptions renew automatically until cancelled. You can cancel anytime in Google Play (Android) or via Polar (extension). Cancellation stops future renewals; it does not retroactively refund the current period unless required by law or the relevant store’s policy.</li>
-      <li>Prices and plan details are shown at the point of purchase and may change with notice.</li>
+      <li data-t="s3.1">The free plan includes a limited number of scans (currently 5).</li>
+      <li data-t="s3.2">Pro unlocks unlimited scanning. The Chrome extension’s Pro is billed via <strong>Polar</strong>; the Android app’s Pro is billed via <strong>Google Play</strong>.</li>
+      <li data-t="s3.3">Subscriptions renew automatically until cancelled. You can cancel anytime in Google Play (Android) or via Polar (extension). Cancellation stops future renewals; it does not retroactively refund the current period unless required by law or the relevant store’s policy.</li>
+      <li data-t="s3.4">Prices and plan details are shown at the point of purchase and may change with notice.</li>
     </ul>
 
-    <h2>4. Acceptable Use</h2>
-    <p>You agree not to misuse the Service, including: attempting to break, overload, or reverse-engineer it; using it to process content you have no right to; or using it for unlawful purposes. We may suspend access for abuse.</p>
+    <h2 data-t="h.4">4. Acceptable Use</h2>
+    <p data-t="p.4">You agree not to misuse the Service, including: attempting to break, overload, or reverse-engineer it; using it to process content you have no right to; or using it for unlawful purposes. We may suspend access for abuse.</p>
 
-    <h2>5. AI Output &amp; Accuracy</h2>
-    <p>Receipt extraction and currency conversion are produced by automated systems and may contain errors. You are responsible for reviewing results before relying on them for accounting, reimbursement, tax, or other decisions.</p>
+    <h2 data-t="h.5">5. AI Output &amp; Accuracy</h2>
+    <p data-t="p.5">Receipt extraction and currency conversion are produced by automated systems and may contain errors. You are responsible for reviewing results before relying on them for accounting, reimbursement, tax, or other decisions.</p>
 
-    <h2>6. Zakat Disclaimer (Android)</h2>
-    <p>The Zakat calculator is an informational <strong>guidance tool, not a fatwa</strong> (أداة استرشادية وليست فتوى). Calculations depend on the values and prices you provide and on simplified assumptions. For rulings specific to your situation, consult a qualified scholar. We are not responsible for religious or financial decisions made using the tool.</p>
+    <h2 data-t="h.6">6. Zakat Disclaimer (Android)</h2>
+    <p data-t="p.6">The Zakat calculator is an informational <strong>guidance tool, not a fatwa</strong> (أداة استرشادية وليست فتوى). Calculations depend on the values and prices you provide and on simplified assumptions. For rulings specific to your situation, consult a qualified scholar. We are not responsible for religious or financial decisions made using the tool.</p>
 
-    <h2>7. Intellectual Property</h2>
-    <p>The Service, including its software, design, and branding, is owned by us and protected by law. Your scanned data and exports belong to you.</p>
+    <h2 data-t="h.7">7. Intellectual Property</h2>
+    <p data-t="p.7">The Service, including its software, design, and branding, is owned by us and protected by law. Your scanned data and exports belong to you.</p>
 
-    <h2>8. Disclaimers &amp; Limitation of Liability</h2>
-    <p>The Service is provided “as is” and “as available”, without warranties of any kind to the maximum extent permitted by law. To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages, or for any loss of data, profits, or savings arising from your use of the Service.</p>
+    <h2 data-t="h.8">8. Disclaimers &amp; Limitation of Liability</h2>
+    <p data-t="p.8">The Service is provided “as is” and “as available”, without warranties of any kind to the maximum extent permitted by law. To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages, or for any loss of data, profits, or savings arising from your use of the Service.</p>
 
-    <h2>9. Termination</h2>
-    <p>You may stop using the Service at any time by uninstalling it. We may suspend or terminate access if you violate these Terms or where required by law.</p>
+    <h2 data-t="h.9">9. Termination</h2>
+    <p data-t="p.9">You may stop using the Service at any time by uninstalling it. We may suspend or terminate access if you violate these Terms or where required by law.</p>
 
-    <h2>10. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. Material changes will be posted on this page with a revised “Last updated” date. Continued use after changes means you accept the updated Terms.</p>
+    <h2 data-t="h.10">10. Changes to These Terms</h2>
+    <p data-t="p.10">We may update these Terms from time to time. Material changes will be posted on this page with a revised “Last updated” date. Continued use after changes means you accept the updated Terms.</p>
 
-    <h2>11. Contact</h2>
-    <p>Questions about these Terms? Email <a href="mailto:luckyflopbtt@gmail.com">luckyflopbtt@gmail.com</a>.</p>
+    <h2 data-t="h.11">11. Contact</h2>
+    <p data-t="p.11">Questions about these Terms? Email <a href="mailto:luckyflopbtt@gmail.com">luckyflopbtt@gmail.com</a>.</p>
   </div>
 </section>
 
 <footer>
   <div class="container">
     <p style="margin:0 0 6px">
-      <a href="index.html">Home</a> ·
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Use</a> ·
-      <a href="mailto:luckyflopbtt@gmail.com">Contact</a> ·
+      <a href="index.html" data-t="foot.home">Home</a> ·
+      <a href="privacy.html" data-t="foot.privacy">Privacy Policy</a> ·
+      <a href="terms.html" data-t="foot.terms">Terms of Use</a> ·
+      <a href="mailto:luckyflopbtt@gmail.com" data-t="foot.contact">Contact</a> ·
       <a href="https://github.com/luckyflop/receiptlens-web" target="_blank" rel="noopener">GitHub</a>
     </p>
-    <p class="small">© 2026 Receipt Lens · LuckyFlop. All rights reserved.</p>
+    <p class="small" data-t="foot.rights">© 2026 Receipt Lens · LuckyFlop. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  var TR = {
+    "meta.title": {en:"Terms of Use — Receipt Lens", ar:"شروط الاستخدام — Receipt Lens"},
+    "meta.desc": {en:"Terms of Use for the Receipt Lens Chrome extension and Android app.", ar:"شروط استخدام إضافة كروم وتطبيق أندرويد من Receipt Lens."},
+    "nav.home": {en:"Home", ar:"الرئيسية"},
+    "nav.privacy": {en:"Privacy", ar:"الخصوصية"},
+    "nav.support": {en:"Support", ar:"الدعم"},
+    "h1": {en:"Terms of Use", ar:"شروط الاستخدام"},
+    "updated": {en:"Receipt Lens · Last updated: June 24, 2026", ar:"Receipt Lens · آخر تحديث: ٢٤ يونيو ٢٠٢٦"},
+    "intro": {en:"These Terms of Use (“Terms”) govern your use of the <strong>Receipt Lens AI</strong> Chrome extension, the <strong>Receipt Lens</strong> Android application, and related services (the “Service”), provided by LuckyFlop (“we”, “us”). By installing or using the Service, you agree to these Terms. If you do not agree, please do not use the Service.",
+              ar:"تحكم شروط الاستخدام هذه («الشروط») استخدامك لإضافة كروم <strong>Receipt Lens AI</strong> وتطبيق أندرويد <strong>Receipt Lens</strong> والخدمات المرتبطة بها («الخدمة») المقدّمة من LuckyFlop («نحن»، «لنا»). وبتثبيت الخدمة أو استخدامها، فإنك توافق على هذه الشروط. وإن لم توافق، فيُرجى عدم استخدام الخدمة."},
+    "h.1": {en:"1. The Service", ar:"١. الخدمة"},
+    "p.1": {en:"Receipt Lens lets you scan receipts using AI to extract details such as the merchant, date and total, convert currencies, categorize expenses, export your data, and (in the Android app) estimate Zakat. Features may differ between the extension and the app, and may change over time.",
+            ar:"يتيح لك Receipt Lens مسح الفواتير بالذكاء الاصطناعي لاستخراج تفاصيل مثل المتجر والتاريخ والإجمالي، وتحويل العملات، وتصنيف المصاريف، وتصدير بياناتك، و(في تطبيق أندرويد) تقدير الزكاة. وقد تختلف المزايا بين الإضافة والتطبيق، وقد تتغيّر بمرور الوقت."},
+    "h.2": {en:"2. Eligibility & Accounts", ar:"٢. الأهلية والحسابات"},
+    "p.2": {en:"You must be old enough to form a binding contract in your jurisdiction. You are responsible for activity under your account and for keeping your sign-in secure. You sign in with Google; you agree to provide accurate information.",
+            ar:"يجب أن تكون في سنّ تؤهّلك لإبرام عقد مُلزِم في بلدك. وأنت مسؤول عن النشاط الذي يجري عبر حسابك وعن الحفاظ على أمان تسجيل دخولك. وتسجّل الدخول عبر Google؛ وتوافق على تقديم معلومات دقيقة."},
+    "h.3": {en:"3. Free Plan & Subscriptions", ar:"٣. الخطة المجانية والاشتراكات"},
+    "s3.1": {en:"The free plan includes a limited number of scans (currently 5).", ar:"تتضمّن الخطة المجانية عددًا محدودًا من عمليات المسح (٥ حاليًا)."},
+    "s3.2": {en:"Pro unlocks unlimited scanning. The Chrome extension’s Pro is billed via <strong>Polar</strong>; the Android app’s Pro is billed via <strong>Google Play</strong>.", ar:"يفتح Pro المسح غير المحدود. وتُفوتر نسخة Pro لإضافة كروم عبر <strong>Polar</strong>؛ وتُفوتر نسخة Pro لتطبيق أندرويد عبر <strong>Google Play</strong>."},
+    "s3.3": {en:"Subscriptions renew automatically until cancelled. You can cancel anytime in Google Play (Android) or via Polar (extension). Cancellation stops future renewals; it does not retroactively refund the current period unless required by law or the relevant store’s policy.", ar:"تتجدّد الاشتراكات تلقائيًا حتى يتم إلغاؤها. ويمكنك الإلغاء في أي وقت من Google Play (أندرويد) أو عبر Polar (الإضافة). ويوقف الإلغاء التجديدات المستقبلية؛ ولا يردّ مبلغ الفترة الحالية بأثر رجعي ما لم يقتضِ القانون أو سياسة المتجر المعني ذلك."},
+    "s3.4": {en:"Prices and plan details are shown at the point of purchase and may change with notice.", ar:"تُعرَض الأسعار وتفاصيل الخطة عند الشراء وقد تتغيّر مع إشعار مسبق."},
+    "h.4": {en:"4. Acceptable Use", ar:"٤. الاستخدام المقبول"},
+    "p.4": {en:"You agree not to misuse the Service, including: attempting to break, overload, or reverse-engineer it; using it to process content you have no right to; or using it for unlawful purposes. We may suspend access for abuse.",
+            ar:"توافق على عدم إساءة استخدام الخدمة، بما في ذلك: محاولة كسرها أو إثقالها أو إجراء هندسة عكسية لها؛ أو استخدامها لمعالجة محتوى لا تملك حق استخدامه؛ أو استخدامها لأغراض غير قانونية. ويجوز لنا تعليق الوصول عند إساءة الاستخدام."},
+    "h.5": {en:"5. AI Output & Accuracy", ar:"٥. مخرجات الذكاء الاصطناعي ودقّتها"},
+    "p.5": {en:"Receipt extraction and currency conversion are produced by automated systems and may contain errors. You are responsible for reviewing results before relying on them for accounting, reimbursement, tax, or other decisions.",
+            ar:"تُنتَج عملية استخراج الفواتير وتحويل العملات بأنظمة آلية وقد تحتوي على أخطاء. وأنت مسؤول عن مراجعة النتائج قبل الاعتماد عليها في المحاسبة أو استرداد النفقات أو الضرائب أو غيرها من القرارات."},
+    "h.6": {en:"6. Zakat Disclaimer (Android)", ar:"٦. إخلاء مسؤولية الزكاة (أندرويد)"},
+    "p.6": {en:"The Zakat calculator is an informational <strong>guidance tool, not a fatwa</strong> (أداة استرشادية وليست فتوى). Calculations depend on the values and prices you provide and on simplified assumptions. For rulings specific to your situation, consult a qualified scholar. We are not responsible for religious or financial decisions made using the tool.",
+            ar:"حاسبة الزكاة <strong>أداة استرشادية معلوماتية وليست فتوى</strong>. وتعتمد الحسابات على القيم والأسعار التي تقدّمها وعلى افتراضات مبسّطة. وللأحكام الخاصة بحالتك، استشر عالمًا مختصًا. ولسنا مسؤولين عن القرارات الدينية أو المالية المتّخذة باستخدام الأداة."},
+    "h.7": {en:"7. Intellectual Property", ar:"٧. الملكية الفكرية"},
+    "p.7": {en:"The Service, including its software, design, and branding, is owned by us and protected by law. Your scanned data and exports belong to you.",
+            ar:"الخدمة، بما في ذلك برمجياتها وتصميمها وعلامتها التجارية، مملوكة لنا ومحمية بموجب القانون. أما بياناتك الممسوحة وملفاتك المصدَّرة فهي ملك لك."},
+    "h.8": {en:"8. Disclaimers & Limitation of Liability", ar:"٨. إخلاء المسؤولية وحدود المسؤولية"},
+    "p.8": {en:"The Service is provided “as is” and “as available”, without warranties of any kind to the maximum extent permitted by law. To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages, or for any loss of data, profits, or savings arising from your use of the Service.",
+            ar:"تُقدَّم الخدمة «كما هي» و«حسب توفّرها»، دون أي ضمانات من أي نوع إلى أقصى حدّ يسمح به القانون. وإلى أقصى حدّ يسمح به القانون، لسنا مسؤولين عن أي أضرار غير مباشرة أو عرضية أو تبعية، أو عن أي فقدان للبيانات أو الأرباح أو المدّخرات ينشأ عن استخدامك للخدمة."},
+    "h.9": {en:"9. Termination", ar:"٩. الإنهاء"},
+    "p.9": {en:"You may stop using the Service at any time by uninstalling it. We may suspend or terminate access if you violate these Terms or where required by law.",
+            ar:"يمكنك التوقّف عن استخدام الخدمة في أي وقت بإلغاء تثبيتها. ويجوز لنا تعليق الوصول أو إنهاؤه إذا خالفت هذه الشروط أو حيثما يقتضي القانون ذلك."},
+    "h.10": {en:"10. Changes to These Terms", ar:"١٠. تغييرات هذه الشروط"},
+    "p.10": {en:"We may update these Terms from time to time. Material changes will be posted on this page with a revised “Last updated” date. Continued use after changes means you accept the updated Terms.",
+             ar:"قد نحدّث هذه الشروط من حين لآخر. وستُنشَر التغييرات الجوهرية على هذه الصفحة مع تحديث تاريخ «آخر تحديث». ويعني استمرارك في الاستخدام بعد التغييرات قبولك للشروط المحدّثة."},
+    "h.11": {en:"11. Contact", ar:"١١. تواصل"},
+    "p.11": {en:"Questions about these Terms? Email <a href=\"mailto:luckyflopbtt@gmail.com\">luckyflopbtt@gmail.com</a>.", ar:"أسئلة حول هذه الشروط؟ راسلنا على <a href=\"mailto:luckyflopbtt@gmail.com\">luckyflopbtt@gmail.com</a>."},
+    "foot.home": {en:"Home", ar:"الرئيسية"},
+    "foot.privacy": {en:"Privacy Policy", ar:"سياسة الخصوصية"},
+    "foot.terms": {en:"Terms of Use", ar:"شروط الاستخدام"},
+    "foot.contact": {en:"Contact", ar:"تواصل"},
+    "foot.rights": {en:"© 2026 Receipt Lens · LuckyFlop. All rights reserved.", ar:"© 2026 Receipt Lens · LuckyFlop. جميع الحقوق محفوظة."}
+  };
+  function applyLang(lang){
+    var html=document.documentElement; html.lang=lang; html.dir=(lang==="ar")?"rtl":"ltr";
+    document.querySelectorAll("[data-t]").forEach(function(el){
+      var k=el.getAttribute("data-t");
+      if(TR[k]&&TR[k][lang]!=null){
+        if(el.tagName==="TITLE") el.textContent=TR[k][lang];
+        else if(el.tagName==="META") el.setAttribute("content",TR[k][lang]);
+        else el.innerHTML=TR[k][lang];
+      }
+    });
+    var b=document.getElementById("langBtn"); b.textContent=(lang==="ar")?"English":"العربية";
+    try{localStorage.setItem("rl_lang",lang);}catch(e){}
+  }
+  (function(){
+    var s=null; try{s=localStorage.getItem("rl_lang");}catch(e){}
+    var lang=s||((navigator.language||"en").toLowerCase().indexOf("ar")===0?"ar":"en");
+    applyLang(lang);
+    document.getElementById("langBtn").addEventListener("click",function(){
+      applyLang(document.documentElement.lang==="ar"?"en":"ar");
+    });
+  })();
+</script>
 
 </body>
 </html>
