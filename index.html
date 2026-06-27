@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Receipt Lens — AI Receipt Scanner, Expenses & Zakat</title>
-<meta name="description" content="Scan receipts with AI, auto-categorize expenses, convert currencies, and calculate Zakat. Available as a Chrome extension and an Android app.">
+<title data-t="meta.title">Receipt Lens — AI Receipt Scanner, Expenses & Zakat</title>
+<meta name="description" data-t="meta.desc" content="Scan receipts with AI, auto-categorize expenses, convert currencies, and calculate Zakat. Available as a Chrome extension and an Android app.">
 <link rel="icon" href="app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,12 +20,15 @@
       <img src="app-icon.png" alt="Receipt Lens logo">
       Receipt Lens
     </a>
-    <div class="nav-links">
-      <a href="#apps">Apps</a>
-      <a href="#features">Features</a>
-      <a href="#zakat">Zakat</a>
-      <a href="#pricing">Pricing</a>
-      <a href="privacy.html">Privacy</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#apps" data-t="nav.apps">Apps</a>
+        <a href="#features" data-t="nav.features">Features</a>
+        <a href="#zakat" data-t="nav.zakat">Zakat</a>
+        <a href="#pricing" data-t="nav.pricing">Pricing</a>
+        <a href="privacy.html" data-t="nav.privacy">Privacy</a>
+      </div>
+      <button class="langtoggle" id="langBtn" type="button" aria-label="Switch language">العربية</button>
     </div>
   </div>
 </nav>
@@ -30,15 +36,14 @@
 <!-- HERO -->
 <header class="hero">
   <div class="container">
-    <span class="pill">AI receipts · Expenses · Zakat</span>
-    <h1>Turn receipts into organized expenses — in seconds.</h1>
-    <p class="lead">Receipt Lens uses AI to read your receipts, pull out the store, date and total, convert currencies, and keep your spending tidy. Use it in your browser or on your phone.</p>
+    <span class="pill" data-t="hero.pill">AI receipts · Expenses · Zakat</span>
+    <h1 data-t="hero.h1">Turn receipts into organized expenses — in seconds.</h1>
+    <p class="lead" data-t="hero.lead">Receipt Lens uses AI to read your receipts, pull out the store, date and total, convert currencies, and keep your spending tidy. Use it in your browser or on your phone.</p>
     <div class="cta-row">
-      <a class="btn" href="https://chromewebstore.google.com/detail/hhflggooefmfddnckdploepficheflej" target="_blank" rel="noopener">Add to Chrome</a>
-      <!-- When the Android app is live on Google Play, remove aria-disabled and the "Coming soon" note below. -->
-      <a class="btn green" href="https://play.google.com/store/apps/details?id=com.luckyflop.receiptlens" target="_blank" rel="noopener" aria-disabled="true">Coming soon on Google Play</a>
+      <a class="btn" href="https://chromewebstore.google.com/detail/hhflggooefmfddnckdploepficheflej" target="_blank" rel="noopener" data-t="cta.chrome">Add to Chrome</a>
+      <a class="btn green" href="https://play.google.com/store/apps/details?id=com.luckyflop.receiptlens" target="_blank" rel="noopener" aria-disabled="true" data-t="cta.playsoon">Coming soon on Google Play</a>
     </div>
-    <p class="muted" style="font-size:.9rem">Free to start — 5 scans included. No credit card required.</p>
+    <p class="muted" style="font-size:.9rem" data-t="hero.free">Free to start — 5 scans included. No credit card required.</p>
     <img src="screenshot.png" alt="Receipt Lens dashboard" class="demo-img" style="max-width:780px" onerror="this.style.display='none'">
   </div>
 </header>
@@ -46,43 +51,42 @@
 <!-- APPS -->
 <section class="block" id="apps">
   <div class="container">
-    <h2 class="section">Two ways to use Receipt Lens</h2>
-    <p class="section-sub">The same AI engine, wherever you work. Pick the browser extension for desktop expense tracking, or the Android app for scanning on the go.</p>
+    <h2 class="section" data-t="apps.h2">Two ways to use Receipt Lens</h2>
+    <p class="section-sub" data-t="apps.sub">The same AI engine, wherever you work. Pick the browser extension for desktop expense tracking, or the Android app for scanning on the go.</p>
     <div class="grid two">
 
       <div class="card platform">
         <div class="head">
           <img src="app-icon.png" alt="">
           <div>
-            <h3 style="margin:0">Chrome Extension</h3>
-            <span class="muted">For desktop · Receipt Lens AI</span>
+            <h3 style="margin:0" data-t="apps.chrome.h">Chrome Extension</h3>
+            <span class="muted" data-t="apps.chrome.sub">For desktop · Receipt Lens AI</span>
           </div>
         </div>
         <ul>
-          <li>Scan receipt images right from your browser.</li>
-          <li>Automatic currency conversion to your preferred currency.</li>
-          <li>One-click export to Excel / CSV for accounting and taxes.</li>
-          <li>Your scan history stays on your device.</li>
+          <li data-t="apps.chrome.l1">Scan receipt images right from your browser.</li>
+          <li data-t="apps.chrome.l2">Automatic currency conversion to your preferred currency.</li>
+          <li data-t="apps.chrome.l3">One-click export to Excel / CSV for accounting and taxes.</li>
+          <li data-t="apps.chrome.l4">Your scan history stays on your device.</li>
         </ul>
-        <a class="btn" href="https://chromewebstore.google.com/detail/hhflggooefmfddnckdploepficheflej" target="_blank" rel="noopener">Add to Chrome</a>
+        <a class="btn" href="https://chromewebstore.google.com/detail/hhflggooefmfddnckdploepficheflej" target="_blank" rel="noopener" data-t="cta.chrome">Add to Chrome</a>
       </div>
 
       <div class="card platform">
         <div class="head">
           <img src="app-icon.png" alt="">
           <div>
-            <h3 style="margin:0">Android App</h3>
-            <span class="muted">For mobile · Gulf Arabic, RTL</span>
+            <h3 style="margin:0" data-t="apps.android.h">Android App</h3>
+            <span class="muted" data-t="apps.android.sub">For mobile · Gulf Arabic, RTL</span>
           </div>
         </div>
         <ul>
-          <li>Snap a photo or pick from your gallery to scan instantly.</li>
-          <li>Automatic expense categorization and a monthly summary.</li>
-          <li>Built-in <strong>Zakat calculator</strong> with live gold/silver nisab and hawl tracking.</li>
-          <li>Multi-currency: AED, SAR, USD, EUR, QAR, KWD — with Arabic-Indic digits.</li>
+          <li data-t="apps.android.l1">Snap a photo or pick from your gallery to scan instantly.</li>
+          <li data-t="apps.android.l2">Automatic expense categorization and a monthly summary.</li>
+          <li data-t="apps.android.l3">Built-in <strong>Zakat calculator</strong> with live gold/silver nisab and hawl tracking.</li>
+          <li data-t="apps.android.l4">Multi-currency: AED, SAR, USD, EUR, QAR, KWD — with Arabic-Indic digits.</li>
         </ul>
-        <!-- When live, remove aria-disabled and change the label to "Get it on Google Play". -->
-        <a class="btn green" href="https://play.google.com/store/apps/details?id=com.luckyflop.receiptlens" target="_blank" rel="noopener" aria-disabled="true">Coming soon on Google Play</a>
+        <a class="btn green" href="https://play.google.com/store/apps/details?id=com.luckyflop.receiptlens" target="_blank" rel="noopener" aria-disabled="true" data-t="cta.playsoon">Coming soon on Google Play</a>
       </div>
 
     </div>
@@ -92,38 +96,38 @@
 <!-- FEATURES -->
 <section class="block alt" id="features">
   <div class="container">
-    <h2 class="section">What you get</h2>
-    <p class="section-sub">Built to remove manual data entry and keep your records accurate.</p>
+    <h2 class="section" data-t="feat.h2">What you get</h2>
+    <p class="section-sub" data-t="feat.sub">Built to remove manual data entry and keep your records accurate.</p>
     <div class="grid three">
       <div class="card">
         <div class="ico">🤖</div>
-        <h3>AI-powered scanning</h3>
-        <p class="muted">Modern AI reads the store name, date and total from your receipt — across Arabic, Persian, Turkish and English.</p>
+        <h3 data-t="feat.1.h">AI-powered scanning</h3>
+        <p class="muted" data-t="feat.1.p">Modern AI reads the store name, date and total from your receipt — across Arabic, Persian, Turkish and English.</p>
       </div>
       <div class="card">
         <div class="ico">💱</div>
-        <h3>Currency conversion</h3>
-        <p class="muted">Convert receipt totals to your home currency using live exchange rates.</p>
+        <h3 data-t="feat.2.h">Currency conversion</h3>
+        <p class="muted" data-t="feat.2.p">Convert receipt totals to your home currency using live exchange rates.</p>
       </div>
       <div class="card">
         <div class="ico green">🗂️</div>
-        <h3>Auto-categorized</h3>
-        <p class="muted">Expenses are sorted into clear categories with a monthly summary you can share.</p>
+        <h3 data-t="feat.3.h">Auto-categorized</h3>
+        <p class="muted" data-t="feat.3.p">Expenses are sorted into clear categories with a monthly summary you can share.</p>
       </div>
       <div class="card">
         <div class="ico">📤</div>
-        <h3>Export anywhere</h3>
-        <p class="muted">Send your data to Excel or CSV for easy accounting, reimbursement and tax filing.</p>
+        <h3 data-t="feat.4.h">Export anywhere</h3>
+        <p class="muted" data-t="feat.4.p">Send your data to Excel or CSV for easy accounting, reimbursement and tax filing.</p>
       </div>
       <div class="card">
         <div class="ico">🔐</div>
-        <h3>Secure Google Sign-In</h3>
-        <p class="muted">Sign in with Google. We only request your basic email and profile — nothing more.</p>
+        <h3 data-t="feat.5.h">Secure Google Sign-In</h3>
+        <p class="muted" data-t="feat.5.p">Sign in with Google. We only request your basic email and profile — nothing more.</p>
       </div>
       <div class="card">
         <div class="ico green">📿</div>
-        <h3>Zakat made simple</h3>
-        <p class="muted">The Android app calculates Zakat with gold/silver nisab and a lunar-year hawl tracker.</p>
+        <h3 data-t="feat.6.h">Zakat made simple</h3>
+        <p class="muted" data-t="feat.6.p">The Android app calculates Zakat with gold/silver nisab and a lunar-year hawl tracker.</p>
       </div>
     </div>
   </div>
@@ -132,17 +136,17 @@
 <!-- ZAKAT -->
 <section class="block" id="zakat">
   <div class="container">
-    <h2 class="section">Zakat calculator (Android)</h2>
-    <p class="section-sub">Designed for the Gulf, in Arabic. Track your wealth and work out the 2.5% due with confidence.</p>
+    <h2 class="section" data-t="zakat.h2">Zakat calculator (Android)</h2>
+    <p class="section-sub" data-t="zakat.sub">Designed for the Gulf, in Arabic. Track your wealth and work out the 2.5% due with confidence.</p>
     <div class="grid two">
       <div class="card">
-        <h3>Live nisab & hawl</h3>
-        <p class="muted">Choose the gold (85g) or silver (595g) standard, fetch a live price per gram, and the app computes your nisab automatically. A hawl tracker follows the 354-day lunar year and tells you when Zakat becomes due.</p>
+        <h3 data-t="zakat.1.h">Live nisab & hawl</h3>
+        <p class="muted" data-t="zakat.1.p">Choose the gold (85g) or silver (595g) standard, fetch a live price per gram, and the app computes your nisab automatically. A hawl tracker follows the 354-day lunar year and tells you when Zakat becomes due.</p>
       </div>
       <div class="card">
-        <h3>Full asset breakdown</h3>
-        <p class="muted">Add cash, gold, silver, trade goods, stocks and receivables, subtract debts, and get your zakatable total and the 2.5% amount — all with clear Arabic guidance.</p>
-        <p class="note" style="margin-top:14px">This is a guidance tool, not a fatwa (أداة استرشادية وليست فتوى). For rulings specific to your situation, please consult a qualified scholar.</p>
+        <h3 data-t="zakat.2.h">Full asset breakdown</h3>
+        <p class="muted" data-t="zakat.2.p">Add cash, gold, silver, trade goods, stocks and receivables, subtract debts, and get your zakatable total and the 2.5% amount — all with clear Arabic guidance.</p>
+        <p class="note" style="margin-top:14px" data-t="zakat.note">This is a guidance tool, not a fatwa (أداة استرشادية وليست فتوى). For rulings specific to your situation, please consult a qualified scholar.</p>
       </div>
     </div>
   </div>
@@ -151,8 +155,8 @@
 <!-- SCREENSHOTS -->
 <section class="block alt" id="screens">
   <div class="container">
-    <h2 class="section">See it in action</h2>
-    <p class="section-sub">The Android app, in Arabic (RTL) — track expenses and calculate Zakat in one place.</p>
+    <h2 class="section" data-t="shots.h2">See it in action</h2>
+    <p class="section-sub" data-t="shots.sub">The Android app, in Arabic (RTL) — track expenses and calculate Zakat in one place.</p>
     <div class="grid two" style="align-items:start">
       <img src="app-expenses.png" alt="Receipt Lens — expenses screen (Arabic)" style="width:100%;border-radius:18px;box-shadow:var(--shadow)">
       <img src="app-zakat.png" alt="Receipt Lens — Zakat calculator screen (Arabic)" style="width:100%;border-radius:18px;box-shadow:var(--shadow)">
@@ -163,42 +167,42 @@
 <!-- PRICING -->
 <section class="block alt" id="pricing">
   <div class="container">
-    <h2 class="section">Simple, transparent pricing</h2>
-    <p class="section-sub">Start free with 5 scans. Upgrade to Pro for unlimited scanning. No ads, no hidden fees, cancel anytime.</p>
+    <h2 class="section" data-t="price.h2">Simple, transparent pricing</h2>
+    <p class="section-sub" data-t="price.sub">Start free with 5 scans. Upgrade to Pro for unlimited scanning. No ads, no hidden fees, cancel anytime.</p>
     <div class="grid two">
 
       <div class="card platform">
-        <div class="head"><img src="app-icon.png" alt=""><h3 style="margin:0">Chrome Extension</h3></div>
-        <p class="muted">Billed securely via Polar.</p>
+        <div class="head"><img src="app-icon.png" alt=""><h3 style="margin:0" data-t="apps.chrome.h">Chrome Extension</h3></div>
+        <p class="muted" data-t="price.chrome.bill">Billed securely via Polar.</p>
         <div class="grid two" style="gap:14px;margin-top:6px">
           <div class="card" style="box-shadow:none">
-            <h4 style="margin:.2rem 0">Free</h4>
+            <h4 style="margin:.2rem 0" data-t="price.free">Free</h4>
             <div class="price">$0</div>
-            <p class="muted">5 scans to get started</p>
+            <p class="muted" data-t="price.free.sub">5 scans to get started</p>
           </div>
           <div class="card popular" style="box-shadow:none">
             <span class="badge">Pro</span>
-            <div class="price">$4.99 <span>/ month</span></div>
-            <p class="muted">Unlimited scanning</p>
-            <a class="btn" href="https://buy.polar.sh/polar_cl_jkDp5ByUOYQw5JVrWJiD7LXKT5VJi7Fs" target="_blank" rel="noopener">Upgrade</a>
+            <div class="price">$4.99 <span data-t="price.permonth">/ month</span></div>
+            <p class="muted" data-t="price.unlimited">Unlimited scanning</p>
+            <a class="btn" href="https://buy.polar.sh/polar_cl_jkDp5ByUOYQw5JVrWJiD7LXKT5VJi7Fs" target="_blank" rel="noopener" data-t="price.upgrade">Upgrade</a>
           </div>
         </div>
       </div>
 
       <div class="card platform">
-        <div class="head"><img src="app-icon.png" alt=""><h3 style="margin:0">Android App</h3></div>
-        <p class="muted">Billed securely via Google Play.</p>
+        <div class="head"><img src="app-icon.png" alt=""><h3 style="margin:0" data-t="apps.android.h">Android App</h3></div>
+        <p class="muted" data-t="price.android.bill">Billed securely via Google Play.</p>
         <div class="grid two" style="gap:14px;margin-top:6px">
           <div class="card" style="box-shadow:none">
-            <h4 style="margin:.2rem 0">Free</h4>
+            <h4 style="margin:.2rem 0" data-t="price.free">Free</h4>
             <div class="price">$0</div>
-            <p class="muted">5 scans to get started</p>
+            <p class="muted" data-t="price.free.sub">5 scans to get started</p>
           </div>
           <div class="card popular" style="box-shadow:none">
             <span class="badge">Pro</span>
-            <div class="price">$2.99 <span>/ month</span></div>
-            <p class="muted">Unlimited scanning</p>
-            <a class="btn green" href="https://play.google.com/store/apps/details?id=com.luckyflop.receiptlens" target="_blank" rel="noopener" aria-disabled="true">Coming soon</a>
+            <div class="price">$2.99 <span data-t="price.permonth">/ month</span></div>
+            <p class="muted" data-t="price.unlimited">Unlimited scanning</p>
+            <a class="btn green" href="https://play.google.com/store/apps/details?id=com.luckyflop.receiptlens" target="_blank" rel="noopener" aria-disabled="true" data-t="price.soon">Coming soon</a>
           </div>
         </div>
       </div>
@@ -211,16 +215,116 @@
 <footer>
   <div class="container">
     <p style="margin:0 0 6px">
-      <a href="index.html">Home</a> ·
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Use</a> ·
-      <a href="mailto:luckyflopbtt@gmail.com">Support</a> ·
+      <a href="index.html" data-t="foot.home">Home</a> ·
+      <a href="privacy.html" data-t="foot.privacy">Privacy Policy</a> ·
+      <a href="terms.html" data-t="foot.terms">Terms of Use</a> ·
+      <a href="mailto:luckyflopbtt@gmail.com" data-t="foot.support">Support</a> ·
       <a href="https://github.com/luckyflop/receiptlens-web" target="_blank" rel="noopener">GitHub</a> ·
       <a href="https://x.com/ReceiptlensAI" target="_blank" rel="noopener">@ReceiptlensAI</a>
     </p>
-    <p class="small">© 2026 Receipt Lens · LuckyFlop. All rights reserved.</p>
+    <p class="small" data-t="foot.rights">© 2026 Receipt Lens · LuckyFlop. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  var TR = {
+    "meta.title": {en:"Receipt Lens — AI Receipt Scanner, Expenses & Zakat", ar:"Receipt Lens — ماسح فواتير بالذكاء الاصطناعي ومصاريف وزكاة"},
+    "meta.desc": {en:"Scan receipts with AI, auto-categorize expenses, convert currencies, and calculate Zakat. Available as a Chrome extension and an Android app.",
+                  ar:"امسح الفواتير بالذكاء الاصطناعي، صنّف مصاريفك، حوّل العملات، واحسب زكاتك. متوفّر كإضافة كروم وتطبيق أندرويد."},
+    "nav.apps": {en:"Apps", ar:"التطبيقات"},
+    "nav.features": {en:"Features", ar:"المزايا"},
+    "nav.zakat": {en:"Zakat", ar:"الزكاة"},
+    "nav.pricing": {en:"Pricing", ar:"الأسعار"},
+    "nav.privacy": {en:"Privacy", ar:"الخصوصية"},
+    "hero.pill": {en:"AI receipts · Expenses · Zakat", ar:"فواتير بالذكاء الاصطناعي · مصاريف · زكاة"},
+    "hero.h1": {en:"Turn receipts into organized expenses — in seconds.", ar:"حوّل فواتيرك إلى مصاريف منظّمة — في ثوانٍ."},
+    "hero.lead": {en:"Receipt Lens uses AI to read your receipts, pull out the store, date and total, convert currencies, and keep your spending tidy. Use it in your browser or on your phone.",
+                  ar:"يستخدم Receipt Lens الذكاء الاصطناعي لقراءة فواتيرك واستخراج اسم المتجر والتاريخ والإجمالي، وتحويل العملات، وتنظيم مصاريفك. استخدمه في متصفحك أو على هاتفك."},
+    "cta.chrome": {en:"Add to Chrome", ar:"أضِف إلى كروم"},
+    "cta.playsoon": {en:"Coming soon on Google Play", ar:"قريبًا على Google Play"},
+    "hero.free": {en:"Free to start — 5 scans included. No credit card required.", ar:"ابدأ مجانًا — ٥ عمليات مسح مجانية. بلا بطاقة ائتمان."},
+    "apps.h2": {en:"Two ways to use Receipt Lens", ar:"طريقتان لاستخدام Receipt Lens"},
+    "apps.sub": {en:"The same AI engine, wherever you work. Pick the browser extension for desktop expense tracking, or the Android app for scanning on the go.",
+                 ar:"المحرّك نفسه أينما عملت. اختر إضافة المتصفح لتتبّع المصاريف على الحاسوب، أو تطبيق أندرويد للمسح أثناء التنقّل."},
+    "apps.chrome.h": {en:"Chrome Extension", ar:"إضافة كروم"},
+    "apps.chrome.sub": {en:"For desktop · Receipt Lens AI", ar:"للحاسوب · Receipt Lens AI"},
+    "apps.chrome.l1": {en:"Scan receipt images right from your browser.", ar:"امسح صور الفواتير مباشرة من متصفحك."},
+    "apps.chrome.l2": {en:"Automatic currency conversion to your preferred currency.", ar:"تحويل تلقائي للعملات إلى عملتك المفضّلة."},
+    "apps.chrome.l3": {en:"One-click export to Excel / CSV for accounting and taxes.", ar:"تصدير بضغطة واحدة إلى Excel / CSV للمحاسبة والضرائب."},
+    "apps.chrome.l4": {en:"Your scan history stays on your device.", ar:"سجلّ عمليات المسح يبقى على جهازك."},
+    "apps.android.h": {en:"Android App", ar:"تطبيق أندرويد"},
+    "apps.android.sub": {en:"For mobile · Gulf Arabic, RTL", ar:"للهاتف · عربية الخليج، من اليمين لليسار"},
+    "apps.android.l1": {en:"Snap a photo or pick from your gallery to scan instantly.", ar:"التقط صورة أو اختر من معرض الصور للمسح فورًا."},
+    "apps.android.l2": {en:"Automatic expense categorization and a monthly summary.", ar:"تصنيف تلقائي للمصاريف وملخّص شهري."},
+    "apps.android.l3": {en:"Built-in <strong>Zakat calculator</strong> with live gold/silver nisab and hawl tracking.", ar:"حاسبة <strong>زكاة</strong> مدمجة مع نصاب ذهب/فضة لحظي وتتبّع الحَوْل."},
+    "apps.android.l4": {en:"Multi-currency: AED, SAR, USD, EUR, QAR, KWD — with Arabic-Indic digits.", ar:"عملات متعددة: درهم، ريال، دولار، يورو، ريال قطري، دينار كويتي — بأرقام عربية."},
+    "feat.h2": {en:"What you get", ar:"ماذا تحصل عليه"},
+    "feat.sub": {en:"Built to remove manual data entry and keep your records accurate.", ar:"مصمّم لإزالة الإدخال اليدوي والحفاظ على دقّة سجلاتك."},
+    "feat.1.h": {en:"AI-powered scanning", ar:"مسح بالذكاء الاصطناعي"},
+    "feat.1.p": {en:"Modern AI reads the store name, date and total from your receipt — across Arabic, Persian, Turkish and English.", ar:"يقرأ الذكاء الاصطناعي الحديث اسم المتجر والتاريخ والإجمالي من فاتورتك — بالعربية والفارسية والتركية والإنجليزية."},
+    "feat.2.h": {en:"Currency conversion", ar:"تحويل العملات"},
+    "feat.2.p": {en:"Convert receipt totals to your home currency using live exchange rates.", ar:"حوّل إجماليات الفواتير إلى عملتك المحلية بأسعار صرف لحظية."},
+    "feat.3.h": {en:"Auto-categorized", ar:"تصنيف تلقائي"},
+    "feat.3.p": {en:"Expenses are sorted into clear categories with a monthly summary you can share.", ar:"تُصنَّف المصاريف في فئات واضحة مع ملخّص شهري يمكنك مشاركته."},
+    "feat.4.h": {en:"Export anywhere", ar:"تصدير إلى أي مكان"},
+    "feat.4.p": {en:"Send your data to Excel or CSV for easy accounting, reimbursement and tax filing.", ar:"أرسل بياناتك إلى Excel أو CSV لتسهيل المحاسبة واسترداد النفقات والإقرار الضريبي."},
+    "feat.5.h": {en:"Secure Google Sign-In", ar:"تسجيل دخول آمن عبر Google"},
+    "feat.5.p": {en:"Sign in with Google. We only request your basic email and profile — nothing more.", ar:"سجّل الدخول عبر Google. نطلب بريدك وملفك الأساسي فقط — لا أكثر."},
+    "feat.6.h": {en:"Zakat made simple", ar:"الزكاة بكل بساطة"},
+    "feat.6.p": {en:"The Android app calculates Zakat with gold/silver nisab and a lunar-year hawl tracker.", ar:"يحسب تطبيق أندرويد الزكاة بنصاب الذهب/الفضة وتتبّع الحَوْل بالسنة القمرية."},
+    "zakat.h2": {en:"Zakat calculator (Android)", ar:"حاسبة الزكاة (أندرويد)"},
+    "zakat.sub": {en:"Designed for the Gulf, in Arabic. Track your wealth and work out the 2.5% due with confidence.", ar:"مصمّمة للخليج، بالعربية. تتبّع أموالك واحسب نسبة ٢٫٥٪ المستحقة بثقة."},
+    "zakat.1.h": {en:"Live nisab & hawl", ar:"نصاب وحَوْل لحظي"},
+    "zakat.1.p": {en:"Choose the gold (85g) or silver (595g) standard, fetch a live price per gram, and the app computes your nisab automatically. A hawl tracker follows the 354-day lunar year and tells you when Zakat becomes due.",
+                  ar:"اختر معيار الذهب (٨٥غ) أو الفضة (٥٩٥غ)، اجلب سعرًا لحظيًا للجرام، ويحسب التطبيق نصابك تلقائيًا. ويتابع متتبّع الحَوْل السنة القمرية (٣٥٤ يومًا) ويخبرك بموعد وجوب الزكاة."},
+    "zakat.2.h": {en:"Full asset breakdown", ar:"تفصيل كامل للأصول"},
+    "zakat.2.p": {en:"Add cash, gold, silver, trade goods, stocks and receivables, subtract debts, and get your zakatable total and the 2.5% amount — all with clear Arabic guidance.",
+                  ar:"أضِف النقد والذهب والفضة وعروض التجارة والأسهم والمستحقات، واطرح الديون، واحصل على إجمالي ما تجب فيه الزكاة ومبلغ ٢٫٥٪ — كل ذلك بإرشاد عربي واضح."},
+    "zakat.note": {en:"This is a guidance tool, not a fatwa (أداة استرشادية وليست فتوى). For rulings specific to your situation, please consult a qualified scholar.",
+                   ar:"هذه أداة استرشادية وليست فتوى. للأحكام الخاصة بحالتك، يُرجى استشارة عالم مختص."},
+    "shots.h2": {en:"See it in action", ar:"شاهده أثناء العمل"},
+    "shots.sub": {en:"The Android app, in Arabic (RTL) — track expenses and calculate Zakat in one place.", ar:"تطبيق أندرويد، بالعربية (من اليمين لليسار) — تتبّع المصاريف واحسب الزكاة في مكان واحد."},
+    "price.h2": {en:"Simple, transparent pricing", ar:"أسعار بسيطة وشفّافة"},
+    "price.sub": {en:"Start free with 5 scans. Upgrade to Pro for unlimited scanning. No ads, no hidden fees, cancel anytime.", ar:"ابدأ مجانًا بـ ٥ عمليات مسح. ارتقِ إلى Pro للمسح غير المحدود. بلا إعلانات، بلا رسوم خفية، وألغِ في أي وقت."},
+    "price.chrome.bill": {en:"Billed securely via Polar.", ar:"الدفع بأمان عبر Polar."},
+    "price.android.bill": {en:"Billed securely via Google Play.", ar:"الدفع بأمان عبر Google Play."},
+    "price.free": {en:"Free", ar:"مجاني"},
+    "price.free.sub": {en:"5 scans to get started", ar:"٥ عمليات مسح للبدء"},
+    "price.permonth": {en:"/ month", ar:"/ شهريًا"},
+    "price.unlimited": {en:"Unlimited scanning", ar:"مسح غير محدود"},
+    "price.upgrade": {en:"Upgrade", ar:"ترقية"},
+    "price.soon": {en:"Coming soon", ar:"قريبًا"},
+    "foot.home": {en:"Home", ar:"الرئيسية"},
+    "foot.privacy": {en:"Privacy Policy", ar:"سياسة الخصوصية"},
+    "foot.terms": {en:"Terms of Use", ar:"شروط الاستخدام"},
+    "foot.support": {en:"Support", ar:"الدعم"},
+    "foot.rights": {en:"© 2026 Receipt Lens · LuckyFlop. All rights reserved.", ar:"© 2026 Receipt Lens · LuckyFlop. جميع الحقوق محفوظة."}
+  };
+
+  function applyLang(lang){
+    var html = document.documentElement;
+    html.lang = lang; html.dir = (lang === "ar") ? "rtl" : "ltr";
+    document.querySelectorAll("[data-t]").forEach(function(el){
+      var k = el.getAttribute("data-t");
+      if (TR[k] && TR[k][lang] != null){
+        if (el.tagName === "TITLE") el.textContent = TR[k][lang];
+        else if (el.tagName === "META") el.setAttribute("content", TR[k][lang]);
+        else el.innerHTML = TR[k][lang];
+      }
+    });
+    var btn = document.getElementById("langBtn");
+    btn.textContent = (lang === "ar") ? "English" : "العربية";
+    try { localStorage.setItem("rl_lang", lang); } catch(e){}
+  }
+  (function(){
+    var saved=null; try{ saved=localStorage.getItem("rl_lang"); }catch(e){}
+    var lang = saved || ((navigator.language||"en").toLowerCase().indexOf("ar")===0 ? "ar" : "en");
+    applyLang(lang);
+    document.getElementById("langBtn").addEventListener("click", function(){
+      applyLang(document.documentElement.lang === "ar" ? "en" : "ar");
+    });
+  })();
+</script>
 
 </body>
 </html>
